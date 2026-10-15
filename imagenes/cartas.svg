@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Imagen de ejemplo de cartas">
+  <rect width="1200" height="800" fill="#eff6ff"/>
+  <g transform="translate(210 180)">
+    <rect x="0" y="0" width="160" height="220" rx="20" fill="#ffffff" stroke="#2563eb" stroke-width="10"/>
+    <text x="80" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="96" fill="#2563eb">3</text>
+  </g>
+  <g transform="translate(430 160)">
+    <rect x="0" y="0" width="160" height="220" rx="20" fill="#ffffff" stroke="#10b981" stroke-width="10"/>
+    <text x="80" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="96" fill="#10b981">5</text>
+  </g>
+  <g transform="translate(650 200)">
+    <rect x="0" y="0" width="160" height="220" rx="20" fill="#ffffff" stroke="#f59e0b" stroke-width="10"/>
+    <text x="80" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="96" fill="#f59e0b">7</text>
+  </g>
+  <text x="120" y="560" font-family="Arial, sans-serif" font-size="72" fill="#1f2937">Cartas</text>
+  <text x="120" y="630" font-family="Arial, sans-serif" font-size="34" fill="#6b7280">Ejemplo visual para tablas y cálculo mental</text>
+</svg>

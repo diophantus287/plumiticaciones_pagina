@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Imagen vacía de ejemplo">
+  <rect width="1200" height="800" fill="#f3f4f6"/>
+  <text x="50%" y="45%" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" fill="#9ca3af">Imagen de ejemplo</text>
+  <text x="50%" y="54%" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#9ca3af">Sustitúyela por tus propias imágenes</text>
+</svg>

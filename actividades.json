@@ -1,0 +1,29 @@
+[
+  {
+    "titulo": "Fracciones con regletas",
+    "descripcion": "Comparar y sumar fracciones usando regletas de Cuisenaire.",
+    "curso": ["4º primaria", "5º primaria"],
+    "tematica": ["fracciones", "números racionales"],
+    "material": ["regletas"],
+    "imagen": "imagenes/regletas.svg",
+    "enlace": "actividades/fracciones-regletas.html"
+  },
+  {
+    "titulo": "Geometría con geoplano",
+    "descripcion": "Construir polígonos y calcular perímetros y áreas sencillas.",
+    "curso": ["3º primaria", "4º primaria"],
+    "tematica": ["geometría", "perímetro"],
+    "material": ["geoplano"],
+    "imagen": "imagenes/geoplano.svg",
+    "enlace": "actividades/geoplano.html"
+  },
+  {
+    "titulo": "Tablas de multiplicar con cartas",
+    "descripcion": "Juego rápido para practicar multiplicación con cartas del 1 al 10.",
+    "curso": ["2º primaria", "3º primaria"],
+    "tematica": ["multiplicación", "cálculo mental"],
+    "material": ["cartas"],
+    "imagen": "imagenes/cartas.svg",
+    "enlace": "actividades/cartas-multiplicar.html"
+  }
+]

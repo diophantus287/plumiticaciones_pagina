@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Imagen de ejemplo de geoplano">
+  <rect width="1200" height="800" fill="#fff7ed"/>
+  <g fill="#fb923c">
+    <circle cx="260" cy="220" r="10"/>
+    <circle cx="400" cy="220" r="10"/>
+    <circle cx="540" cy="220" r="10"/>
+    <circle cx="680" cy="220" r="10"/>
+    <circle cx="820" cy="220" r="10"/>
+    <circle cx="260" cy="360" r="10"/>
+    <circle cx="400" cy="360" r="10"/>
+    <circle cx="540" cy="360" r="10"/>
+    <circle cx="680" cy="360" r="10"/>
+    <circle cx="820" cy="360" r="10"/>
+    <circle cx="260" cy="500" r="10"/>
+    <circle cx="400" cy="500" r="10"/>
+    <circle cx="540" cy="500" r="10"/>
+    <circle cx="680" cy="500" r="10"/>
+    <circle cx="820" cy="500" r="10"/>
+  </g>
+  <polygon points="400,220 680,220 820,360 540,500 260,360" fill="rgba(251,146,60,0.25)" stroke="#ea580c" stroke-width="10"/>
+  <text x="120" y="120" font-family="Arial, sans-serif" font-size="72" fill="#1f2937">Geoplano</text>
+  <text x="120" y="190" font-family="Arial, sans-serif" font-size="34" fill="#6b7280">Ejemplo visual para geometría y perímetro</text>
+</svg>
