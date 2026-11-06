@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin - Plumiticaciones</title>
+<link rel="icon" href="/static/plumi_favicon.ico" sizes="any">
+<style>
+  body { font-family: Arial, sans-serif; background: #EFEFF3; color: #1f2937; margin: 0; }
+  img.banner { display: block; width: 100%; max-height: 160px; object-fit: cover; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 1rem; }
+  .box { background: #fff; border: 1px solid #d1d5db; border-radius: .75rem; padding: 1rem; margin-bottom: 1rem; }
+  label { display: block; margin: .6rem 0 .2rem; font-weight: bold; font-size: .9rem; }
+  input, textarea, select, [contenteditable] { width: 100%; padding: .55rem; border: 1px solid #d1d5db; border-radius: .5rem; font: inherit; box-sizing: border-box; }
+  button { padding: .5rem 1rem; border: 0; border-radius: .5rem; background: #2563eb; color: #fff; cursor: pointer; font: inherit; }
+  button.sec { background: #6b7280; } button.del { background: #dc2626; }
+  .format { display: flex; flex-wrap: wrap; gap: .35rem; margin: .35rem 0; }
+  .format button { padding: .25rem .5rem; background: #4b5563; }
+  #contenido { min-height: 10rem; }
+  .row { display: flex; justify-content: space-between; align-items: center; gap: .5rem; padding: .5rem 0; border-bottom: 1px solid #eee; }
+  .row:last-child { border: 0; }
+  .btns { display: flex; gap: .4rem; flex-shrink: 0; }
+  small { color: #6b7280; } #msg { color: #047857; font-weight: bold; }
+</style>
+</head>
+<body>
+<img class="banner" src="/plumiticaciones.png" alt="Plumiticaciones">
+<div class="wrap">
+  <p><a href="/">&larr; Ver web</a> <span id="msg"></span></p>
+  <div class="box">
+    <h2 id="formTitle">Nueva actividad</h2>
+    <label>Título</label><input id="titulo">
+    <label>Descripción</label><textarea id="descripcion" rows="2"></textarea>
+    <label>Contenido de la actividad <small>(crea la página con la imagen y el PDF)</small></label>
+    <div class="format" aria-label="Formato del contenido">
+      <button type="button" onclick="format('bold')"><b>Negrita</b></button>
+      <button type="button" onclick="format('italic')"><i>Cursiva</i></button>
+      <button type="button" onclick="format('underline')"><u>Subrayado</u></button>
+      <button type="button" onclick="format('insertUnorderedList')">Lista</button>
+      <button type="button" onclick="addLink()">Enlace</button>
+    </div>
+    <div id="contenido" contenteditable="true" role="textbox" aria-multiline="true"></div>
+    <label>Curso <small>(separados por comas)</small></label><input id="curso" placeholder="3º primaria, 4º primaria">
+    <label>Sentido <small>(separados por comas)</small></label><input id="sentido" placeholder="algebraico, de la medida">
+    <label>Proceso matemático <small>(separados por comas)</small></label><input id="proceso" placeholder="conexiones, resolución de problemas">
+    <label>Material <small>(separados por comas)</small></label><input id="material">
+    <label>Imagen</label>
+    <select id="imagen"></select>
+    <label>Subir imagen nueva</label><input type="file" id="file" accept="image/*">
+    <label>Referencia web <small>(opcional; URL que se mostrará en la página de la actividad)</small></label><input id="referencia_web" type="url" placeholder="https://ejemplo.com/recurso">
+    <label>Documentación adicional (PDF) <small id="pdfActual"></small></label>
+    <input type="file" id="pdfFile" accept="application/pdf">
+    <label><input type="checkbox" id="pdfQuitar" style="width:auto"> Quitar PDF actual</label>
+    <label>Enlace <small>(vacío = se genera si hay contenido; también vale un PDF o URL externa)</small></label><input id="enlace">
+    <p><button onclick="guardar()">Guardar</button> <button class="sec" onclick="reset()">Cancelar</button></p>
+  </div>
+  <div class="box">
+    <h2>Actividades</h2>
+    <p><button class="sec" onclick="purgarPaginas()">Purgar páginas huérfanas</button></p>
+    <small>Elimina solo páginas HTML generadas por el panel que ya no estén asociadas a una actividad.</small>
+    <div id="lista"></div>
+  </div>
+</div>
+<script>
+const API = "/admin/api/";
+let items = [], editing = null, pdfActual = "";
+const $ = id => document.getElementById(id);
+const F = ["titulo", "descripcion", "curso", "sentido", "proceso", "material", "enlace", "referencia_web"];
+
+async function api(path, method = "GET", body) {
+  const r = await fetch(API + path, { method, headers: body ? { "Content-Type": "application/json" } : {}, body: body && JSON.stringify(body) });
+  const d = await r.json();
+  if (!r.ok) throw new Error(d.error || "Error");
+  return d;
+}
+function msg(t) { $("msg").textContent = t; setTimeout(() => $("msg").textContent = "", 3000); }
+
+async function cargar() {
+  items = await api("actividades");
+  const imgs = await api("imagenes");
+  $("imagen").innerHTML = imgs.map(i => `<option>${i}</option>`).join("");
+  $("lista").innerHTML = items.map((a, i) => `
+    <div class="row"><div><b></b><br><small></small></div>
+    <div class="btns"><button onclick="editar(${i})">Editar</button><button class="del" onclick="borrar(${i})">Borrar</button></div></div>`).join("");
+  [...$("lista").children].forEach((row, i) => {
+    row.querySelector("b").textContent = items[i].titulo;
+    row.querySelector("small").textContent = [...items[i].curso, ...items[i].sentido, ...items[i].proceso, ...items[i].material].join(" · ");
+  });
+}
+function editar(i) {
+  const a = items[i]; editing = i;
+  F.forEach(k => $(k).value = Array.isArray(a[k]) ? a[k].join(", ") : (a[k] || ""));
+  $("contenido").innerHTML = a.contenido_html || a.contenido || "";
+  $("imagen").value = a.imagen;
+  pdfActual = a.pdf || ""; $("pdfQuitar").checked = false;
+  $("pdfActual").textContent = pdfActual ? "(actual: " + pdfActual + ")" : "";
+  $("formTitle").textContent = "Editar: " + a.titulo;
+  scrollTo(0, 0);
+}
+function reset() {
+  editing = null; pdfActual = ""; $("pdfFile").value = ""; $("pdfQuitar").checked = false; $("pdfActual").textContent = ""; F.forEach(k => $(k).value = ""); $("contenido").innerHTML = ""; $("file").value = "";
+  $("formTitle").textContent = "Nueva actividad";
+}
+function format(command) {
+  $("contenido").focus();
+  document.execCommand(command);
+}
+function addLink() {
+  const url = prompt("URL del enlace");
+  if (!url) return;
+  $("contenido").focus();
+  document.execCommand("createLink", false, url);
+}
+async function guardar() {
+  try {
+    const f = $("file").files[0];
+    let imagen = $("imagen").value;
+    if (f) {
+      const fd = new FormData(); fd.append("file", f);
+      const r = await fetch(API + "upload", { method: "POST", body: fd });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.error);
+      imagen = d.path;
+    }
+    let pdf = $("pdfQuitar").checked ? "" : pdfActual;
+    const pf = $("pdfFile").files[0];
+    if (pf) {
+      const fd = new FormData(); fd.append("file", pf);
+      const r = await fetch(API + "upload-pdf", { method: "POST", body: fd });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.error);
+      pdf = d.path;
+    }
+    const data = {
+      imagen,
+      pdf,
+      contenido: $("contenido").innerText.trim(),
+      contenido_html: $("contenido").innerHTML
+    };
+    F.forEach(k => data[k] = $(k).value);
+    await api(editing === null ? "actividades" : "actividades/" + editing, editing === null ? "POST" : "PUT", data);
+    reset(); await cargar(); msg("Guardado ✔");
+  } catch (e) { alert(e.message); }
+}
+async function borrar(i) {
+  if (!confirm("¿Borrar «" + items[i].titulo + "»?")) return;
+  const result = await api("actividades/" + i, "DELETE");
+  reset(); await cargar();
+  msg(result.imagen_eliminada ? "Actividad e imagen borradas" : "Actividad borrada; imagen conservada");
+}
+async function purgarPaginas() {
+  if (!confirm("¿Eliminar las páginas HTML generadas por el panel que ya no están asociadas a actividades?")) return;
+  try {
+    const result = await api("paginas-huerfanas", "DELETE");
+    msg(`Páginas purgadas: ${result.eliminadas.length}`);
+  } catch (e) { alert(e.message); }
+}
+cargar();
+</script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+[
+  {
+    "titulo": "Nueve colores",
+    "descripcion": "Construimos un cubo 3 × 3 × 3 con policubos de colores.",
+    "contenido_html": "<p>Si tienes 27 cubos pequeños, 3 de cada uno de nueve colores, ¿puedes construir un cubo de 3 × 3 × 3 de manera que cada cara del cubo grande contenga uno de cada color?</p><p>En la imagen, la cara superior y la cara izquierda tienen una unidad de cada color.</p><p>Por desgracia, la tercera cara tiene dos cubos verdes, dos negros, ninguno rojo y ninguno marrón, por lo que no es una solución válida.</p><p>Puedes explorar este problema utilizando cubos. Si no tienes cubos, puedes registrar tus intentos en papel cuadriculado, dibujando y coloreando cada capa, o utilizar la actividad interactiva que aparece a continuación.</p>",
+    "sentido": [
+      "espacial"
+    ],
+    "proceso": [
+      "razonamiento y prueba"
+    ],
+    "curso": [
+      "1º ESO",
+      "2º ESO"
+    ],
+    "material": [
+      "policubos"
+    ],
+    "imagen": "imagenes/cubo-nueve-colores.jpg",
+    "enlace": "actividades/nueve-colores.html",
+    "pdf": "",
+    "contenido": "Si tienes 27 cubos pequeños, 3 de cada uno de nueve colores, ¿puedes construir un cubo de 3 × 3 × 3 de manera que cada cara del cubo grande contenga uno de cada color?\n\nEn la imagen, la cara superior y la cara izquierda tienen una unidad de cada color.\n\nPor desgracia, la tercera cara tiene dos cubos verdes, dos negros, ninguno rojo y ninguno marrón, por lo que no es una solución válida.\n\nPuedes explorar este problema utilizando cubos. Si no tienes cubos, puedes registrar tus intentos en papel cuadriculado, dibujando y coloreando cada capa, o utilizar la actividad interactiva que aparece a continuación.",
+    "referencia_web": "https://nrich.maths.org/problems/nine-colours"
+  },
+  {
+    "titulo": "Urbanización de policubos",
+    "descripcion": "Construimos diferentes edificios a partir de 7 policubos.",
+    "contenido_html": "<p><u>Objetivo</u><strong>: </strong>Investigar de cuántas maneras diferentes podemos construir edificios con un número determinado de policubos.</p><p><u>Normas generales</u></p><ul><li><p>Cada edificio debe tener al menos un policubo.</p></li><li><p>La altura de un edificio es el número de policubos que lo forman.</p></li><li><p>Hay que utilizar todos los bloques disponibles.</p></li><li><p>El orden de los edificios no importa. Por ejemplo, construir edificios de alturas 3 y 2 es lo mismo que construirlos de alturas 2 y 3.</p></li></ul><p><u>Reto 1. Siete bloques sin repetir</u></p><p>Disponéis de exactamente <strong>7 policubos</strong> para construir tantos edificios como queráis.</p><p>Podéis elegir libremente la altura de cada edificio, pero en esta urbanización <b>no se pueden repetir alturas</b>. Es decir no podemos tener una urbanización de alturas 3, 3 y 1.</p><p><strong>Preguntas:</strong></p><ol><li><p>¿De cuántas maneras diferentes podéis construir los edificios utilizando los 7 bloques?</p></li><li><p>¿Cómo podéis estar seguros de que no os habéis dejado ninguna combinación?</p></li></ol><p>Anotad vuestras soluciones y contad cuántas habéis encontrado.</p><p><u>Reto 2. Siete bloques, se pueden repetir, pero solo edificios de altura impar</u></p><p>Exactamente con los mismos <b>7 policubos</b>, pero esta vez hay una condición especial:</p><p><strong>Todos los edificios deben tener una altura impar.</strong></p><p>Por tanto, cada edificio puede tener una altura de 1, 3, 5, 7, 9, 11… Aunque ahora sí se pueden repetir alturas. Es decir <b>sí podemos</b> tener una urbanización con alturas 1, 1, 1, 1 y 3.</p><p><strong>Preguntas:</strong></p><ol><li><p>¿Cuántas combinaciones diferentes podéis construir con los 12 bloques?</p></li><li><p>Encontrad todas las combinaciones posibles.</p></li><li><p>¿Qué estrategia podéis utilizar para aseguraros de que las habéis encontrado todas?</p></li></ol><p>Anotad vuestras soluciones y contad el número total de combinaciones.</p><p><br></p><p>Ampliación, mismo ejercicio pero 12 policubos.</p><p>Actividad propuesta por <a href=\"https://x.com/gremor\" target=\"_blank\" rel=\"noopener noreferrer\">Gregorio Morales</a> en el Taller de <i>Thinking Classroom</i> en el Congreso Avanzando en el Refuerzo de las Competencias Lectora y Matemática de 2025.</p>",
+    "sentido": [
+      "estocástico"
+    ],
+    "proceso": [
+      "razonamiento y prueba",
+      "representación"
+    ],
+    "curso": [
+      "1º ESO",
+      "2º ESO"
+    ],
+    "material": [
+      "policubos"
+    ],
+    "imagen": "imagenes/urbanizacion.jpg",
+    "enlace": "actividades/urbanizacion-de-policubos.html",
+    "pdf": "",
+    "contenido": "Objetivo: Investigar de cuántas maneras diferentes podemos construir edificios con un número determinado de policubos.\n\nNormas generales\n\nCada edificio debe tener al menos un policubo.\n\nLa altura de un edificio es el número de policubos que lo forman.\n\nHay que utilizar todos los bloques disponibles.\n\nEl orden de los edificios no importa. Por ejemplo, construir edificios de alturas 3 y 2 es lo mismo que construirlos de alturas 2 y 3.\n\nReto 1. Siete bloques sin repetir\n\nDisponéis de exactamente 7 policubos para construir tantos edificios como queráis.\n\nPodéis elegir libremente la altura de cada edificio, pero en esta urbanización no se pueden repetir alturas. Es decir no podemos tener una urbanización de alturas 3, 3 y 1.\n\nPreguntas:\n\n¿De cuántas maneras diferentes podéis construir los edificios utilizando los 7 bloques?\n\n¿Cómo podéis estar seguros de que no os habéis dejado ninguna combinación?\n\nAnotad vuestras soluciones y contad cuántas habéis encontrado.\n\nReto 2. Siete bloques, se pueden repetir, pero solo edificios de altura impar\n\nExactamente con los mismos 7 policubos, pero esta vez hay una condición especial:\n\nTodos los edificios deben tener una altura impar.\n\nPor tanto, cada edificio puede tener una altura de 1, 3, 5, 7, 9, 11… Aunque ahora sí se pueden repetir alturas. Es decir sí podemos tener una urbanización con alturas 1, 1, 1, 1 y 3.\n\nPreguntas:\n\n¿Cuántas combinaciones diferentes podéis construir con los 12 bloques?\n\nEncontrad todas las combinaciones posibles.\n\n¿Qué estrategia podéis utilizar para aseguraros de que las habéis encontrado todas?\n\nAnotad vuestras soluciones y contad el número total de combinaciones.\n\n\n\n\nAmpliación, mismo ejercicio pero 12 policubos.\n\nActividad propuesta por Gregorio Morales en el Taller de Thinking Classroom en el Congreso Avanzando en el Refuerzo de las Competencias Lectora y Matemática de 2025.",
+    "referencia_web": ""
+  },
+  {
+    "titulo": "Cambiando de color",
+    "descripcion": "Construimos dos formas iguales con pattern blocks de colores diferentes.",
+    "contenido_html": "En esta actividad el objetivo es construir las dos formas sombreadas al mismo tiempo, con la restricción de que no se repita ningún color de una de ellas en la otra. Hay 13 retos con creciente dificultad.<br>Actividad propuesta por <a href=\"https://jrmf.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Julia Robinson Mathematics Festival</a>.",
+    "sentido": [
+      "espacial"
+    ],
+    "proceso": [
+      "razonamiento y prueba"
+    ],
+    "curso": [
+      "1º ESO",
+      "2º ESO"
+    ],
+    "material": [
+      "pattern blocks"
+    ],
+    "imagen": "imagenes/cambiando-colores.jpg",
+    "enlace": "actividades/cambio-de-color.html",
+    "pdf": "actividades/pdfs/cambiando-colores-compressed.pdf",
+    "contenido": "En esta actividad el objetivo es construir las dos formas sombreadas al mismo tiempo, con la restricción de que no se repita ningún color de una de ellas en la otra. Hay 13 retos con creciente dificultad.\nActividad propuesta por Julia Robinson Mathematics Festival.",
+    "referencia_web": "https://jrmf.org/puzzle/changing-colors/"
+  },
+  {
+    "titulo": "Fracciones con pattern blocks",
+    "descripcion": "Averiguamos la fracción que representa cada bloque cuando cambiamos la unidad.",
+    "contenido_html": "<p><strong>Primera parte: el triángulo como unidad</strong></p><p>En la primera parte, el triángulo se toma como unidad (1). En este caso, resulta sencillo expresar el valor de las demás piezas, ya que podemos utilizar números enteros.</p><p><strong>Segunda parte: el rombo como unidad</strong></p><p>En la segunda parte, el rombo se establece como unidad (1). El alumnado puede determinar fácilmente el valor del hexágono. También puede deducir intuitivamente que el triángulo equivale a 1/2 del rombo, ya que es la mitad de su superficie.</p><p>Recuerda al alumnado que debe escribir las fracciones en las casillas de respuesta con el formato a/b, sin espacios.</p><p>A continuación, pídeles que exploren las distintas formas de expresar el valor del trapecio en función del rombo. Anímales a representar sus razonamientos en el propio canvas, utilizando las piezas geométricas para mostrar cómo han llegado a sus conclusiones.</p><p><strong>Tercera parte: el trapecio como unidad</strong></p><p>En la tercera parte, el trapecio se establece como unidad (1). El alumnado puede encontrar fácilmente los valores del hexágono y del triángulo.</p><p>Dedica algo de tiempo a que exploren cómo determinar el valor del rombo. Existen diferentes estrategias para resolver esta cuestión, por lo que conviene darles libertad para investigar y comparar sus razonamientos.</p><p><strong>Cuarta parte: el hexágono como unidad</strong></p><p>En la última parte, el hexágono se toma como unidad (1). El alumnado deberá expresar el valor de las demás piezas utilizando fracciones unitarias cuando corresponda.</p><p>Esta actividad permite trabajar la equivalencia entre fracciones, la comparación de áreas y la relación entre distintas unidades de medida, favoreciendo que el alumnado desarrolle estrategias propias y represente visualmente sus razonamientos.</p><p><br></p><p>Actividad propuesta por Mathigon para trabajar manipulativos virtuales en <a href=\"https://polypad.amplify.com/\" target=\"_blank\" rel=\"noopener noreferrer\">polypad</a>.</p>",
+    "sentido": [
+      "numérico",
+      "espacial"
+    ],
+    "proceso": [
+      "conexiones"
+    ],
+    "curso": [
+      "1º ESO",
+      "2º ESO"
+    ],
+    "material": [
+      "pattern blocks"
+    ],
+    "imagen": "imagenes/pattern-fracciones-reduced.png",
+    "enlace": "actividades/fracciones-con-pattern-blocks.html",
+    "pdf": "",
+    "contenido": "Primera parte: el triángulo como unidad\n\nEn la primera parte, el triángulo se toma como unidad (1). En este caso, resulta sencillo expresar el valor de las demás piezas, ya que podemos utilizar números enteros.\n\nSegunda parte: el rombo como unidad\n\nEn la segunda parte, el rombo se establece como unidad (1). El alumnado puede determinar fácilmente el valor del hexágono. También puede deducir intuitivamente que el triángulo equivale a 1/2 del rombo, ya que es la mitad de su superficie.\n\nRecuerda al alumnado que debe escribir las fracciones en las casillas de respuesta con el formato a/b, sin espacios.\n\nA continuación, pídeles que exploren las distintas formas de expresar el valor del trapecio en función del rombo. Anímales a representar sus razonamientos en el propio canvas, utilizando las piezas geométricas para mostrar cómo han llegado a sus conclusiones.\n\nTercera parte: el trapecio como unidad\n\nEn la tercera parte, el trapecio se establece como unidad (1). El alumnado puede encontrar fácilmente los valores del hexágono y del triángulo.\n\nDedica algo de tiempo a que exploren cómo determinar el valor del rombo. Existen diferentes estrategias para resolver esta cuestión, por lo que conviene darles libertad para investigar y comparar sus razonamientos.\n\nCuarta parte: el hexágono como unidad\n\nEn la última parte, el hexágono se toma como unidad (1). El alumnado deberá expresar el valor de las demás piezas utilizando fracciones unitarias cuando corresponda.\n\nEsta actividad permite trabajar la equivalencia entre fracciones, la comparación de áreas y la relación entre distintas unidades de medida, favoreciendo que el alumnado desarrolle estrategias propias y represente visualmente sus razonamientos.\n\n\n\n\nActividad propuesta por Mathigon para trabajar manipulativos virtuales en polypad.",
+    "referencia_web": "https://polypad.amplify.com/es/lesson/equivalent-fractions-with-pattern-blocks"
+  },
+  {
+    "titulo": "El recaudador de impuestos",
+    "descripcion": "Elegimos sobres para obtener la mayor cantidad de dinero bajo unas ciertas reglas.",
+    "contenido_html": "<p>El recaudador de impuestos te presenta <strong>12 sobres numerados del 1 al 12</strong>. Dentro de cada sobre hay tantos euros como indica su número: el sobre 1 contiene 1 €, el sobre 2 contiene 2 €, y así sucesivamente hasta el sobre 12, que contiene 12 €.</p><p>El juego funciona de la siguiente manera:</p><ol><li><p>Tú eliges un sobre y te quedas con el dinero que contiene.</p></li><li><p>A continuación, el recaudador se lleva todos los sobres restantes cuyo número sea divisor del número que acabas de elegir. Por ejemplo, si eliges el sobre 8, el recaudador se lleva los sobres 1, 2 y 4.</p></li><li><p>Después, vuelves a elegir un sobre entre los que quedan y te quedas con su dinero. El recaudador vuelve a llevarse todos los sobres restantes cuyo número sea divisor del que has elegido.</p></li><li><p>Solo puedes elegir un sobre si queda al menos un sobre cuyo número tenga divisores entre los sobres disponibles; es decir, si el recaudador puede llevarse al menos un sobre después de tu elección.</p></li></ol><p>El juego termina cuando ya no puedes elegir ningún sobre válido.</p><p><strong>Tu objetivo es conseguir la mayor cantidad de dinero posible. </strong>¿Qué estrategia deberías seguir para maximizar tus ganancias? </p>",
+    "sentido": [
+      "numérico"
+    ],
+    "proceso": [
+      "resolución de problemas"
+    ],
+    "curso": [
+      "1º ESO",
+      "2º ESO"
+    ],
+    "material": [
+      "thinking classroom"
+    ],
+    "imagen": "imagenes/taxman.jpg",
+    "enlace": "actividades/el-recaudador-de-impuestos.html",
+    "pdf": "",
+    "contenido": "El recaudador de impuestos te presenta 12 sobres numerados del 1 al 12. Dentro de cada sobre hay tantos euros como indica su número: el sobre 1 contiene 1 €, el sobre 2 contiene 2 €, y así sucesivamente hasta el sobre 12, que contiene 12 €.\n\nEl juego funciona de la siguiente manera:\n\nTú eliges un sobre y te quedas con el dinero que contiene.\n\nA continuación, el recaudador se lleva todos los sobres restantes cuyo número sea divisor del número que acabas de elegir. Por ejemplo, si eliges el sobre 8, el recaudador se lleva los sobres 1, 2 y 4.\n\nDespués, vuelves a elegir un sobre entre los que quedan y te quedas con su dinero. El recaudador vuelve a llevarse todos los sobres restantes cuyo número sea divisor del que has elegido.\n\nSolo puedes elegir un sobre si queda al menos un sobre cuyo número tenga divisores entre los sobres disponibles; es decir, si el recaudador puede llevarse al menos un sobre después de tu elección.\n\nEl juego termina cuando ya no puedes elegir ningún sobre válido.\n\nTu objetivo es conseguir la mayor cantidad de dinero posible. ¿Qué estrategia deberías seguir para maximizar tus ganancias?",
+    "referencia_web": ""
+  },
+  {
+    "titulo": "El problema de la mochila del contrabandista",
+    "descripcion": "Elegimos objetos para maximizar el valor dentro de la mochila.",
+    "contenido_html": "<p>Un contrabandista tiene una mochila con una capacidad máxima de <strong>20 kg</strong> y una oportunidad para llevarse mercancía valiosa de un almacén. Puede elegir los objetos que quiera, pero solo puede llevarse una unidad de cada uno.</p>ObjetoPesoValorLingote de oro5 kg650 €Diamante3 kg400 €Collar de esmeraldas4 kg500 €Cuadro robado7 kg800 €Bolsa de monedas antiguas6 kg450 €Rubí gigante2 kg250 €Escultura de plata8 kg700 €<p><strong>El reto</strong></p><p>¿Qué objetos debería elegir para conseguir el mayor valor posible sin superar los 20 kg?</p><p>Buscad distintas combinaciones, calculad el peso y el valor de cada una e intentad mejorar las propuestas de los demás grupos.</p><p><br><strong>¿Cómo podéis demostrar que vuestra solución es la mejor?</strong></p>",
+    "sentido": [
+      "numérico"
+    ],
+    "proceso": [
+      "resolución de problemas"
+    ],
+    "curso": [
+      "3º ESO",
+      "4º ESO"
+    ],
+    "material": [
+      "thinking classroom"
+    ],
+    "imagen": "imagenes/mochila.jpg",
+    "enlace": "actividades/el-problema-de-la-mochila-del-contrabandista.html",
+    "pdf": "",
+    "contenido": "Un contrabandista tiene una mochila con una capacidad máxima de 20 kg y una oportunidad para llevarse mercancía valiosa de un almacén. Puede elegir los objetos que quiera, pero solo puede llevarse una unidad de cada uno.\n\nObjetoPesoValorLingote de oro5 kg650 €Diamante3 kg400 €Collar de esmeraldas4 kg500 €Cuadro robado7 kg800 €Bolsa de monedas antiguas6 kg450 €Rubí gigante2 kg250 €Escultura de plata8 kg700 €\n\nEl reto\n\n¿Qué objetos debería elegir para conseguir el mayor valor posible sin superar los 20 kg?\n\nBuscad distintas combinaciones, calculad el peso y el valor de cada una e intentad mejorar las propuestas de los demás grupos.\n\n\n¿Cómo podéis demostrar que vuestra solución es la mejor?",
+    "referencia_web": ""
+  },
+  {
+    "titulo": "Construimos triángulos con GeoStix",
+    "descripcion": "Construcción de triángulos con varillas verde claro (2,5 cm), moradas (7,07 cm) y amarillas (10 cm) para explorar la desigualdad triangular.",
+    "contenido_html": "<p>Disponemos de tres tipos de varillas de diferentes longitudes: <b>verde claro (2,5 cm), moradas (7,07 cm) y amarillas (10 cm).</b></p><p>Elegimos tres varillas cada vez para intentar construir un triángulo, teniendo en cuenta que podemos repetir colores y utilizar varias varillas del mismo tipo. Probamos las distintas combinaciones posibles y observamos cuáles nos permiten formar un triángulo y cuáles no. Manipulamos las varillas para comprobar si sus extremos llegan a unirse. Finalmente, anotamos todas las combinaciones que hemos probado y explicamos qué condiciones deben cumplir las longitudes de los lados para poder construir un triángulo.</p>",
+    "sentido": [
+      "espacial"
+    ],
+    "proceso": [
+      "razonamiento y prueba"
+    ],
+    "curso": [
+      "1º ESO",
+      "2º ESO"
+    ],
+    "material": [
+      "geoStix"
+    ],
+    "imagen": "imagenes/geostix-triangulos.jpg",
+    "enlace": "actividades/construimos-triangulos-con-geostix.html",
+    "pdf": "",
+    "contenido": "Disponemos de tres tipos de varillas de diferentes longitudes: verde claro (2,5 cm), moradas (7,07 cm) y amarillas (10 cm).\n\nElegimos tres varillas cada vez para intentar construir un triángulo, teniendo en cuenta que podemos repetir colores y utilizar varias varillas del mismo tipo. Probamos las distintas combinaciones posibles y observamos cuáles nos permiten formar un triángulo y cuáles no. Manipulamos las varillas para comprobar si sus extremos llegan a unirse. Finalmente, anotamos todas las combinaciones que hemos probado y explicamos qué condiciones deben cumplir las longitudes de los lados para poder construir un triángulo.",
+    "referencia_web": ""
+  },
+  {
+    "titulo": "Exploramos simetrías con pattern blocks",
+    "descripcion": "Construimos un triángulo, hexágono y dodecágono combinando pattern blocks buscando diferentes simetrías",
+    "contenido_html": "<p>Cubre las figuras del pdf utilizando bloques geométricos (pattern blocks). Puedes utilizar tantos bloques como necesites y de cualquier tipo.</p><p>Cada vez que encuentres una solución, dibuja la figura resultante en la plantilla correspondiente e indica sus propiedades de simetría:</p><ul><li><p>Simetría rotacional: ¿la figura coincide consigo misma al girarla? Si es así, indica su orden de simetría (cuántas veces coincide consigo misma durante una vuelta completa).</p></li><li><p>Simetría axial: ¿la figura tiene algún eje de simetría, es decir, una línea que la divide en dos mitades que son imágenes especulares?</p></li></ul><p>A medida que encuentres soluciones, marca las casillas correspondientes de la tabla.</p><ul><li><p>Si consigues formar una figura sin ningún tipo de simetría, marca la casilla de simetría rotacional de orden 1 (1-fold).</p></li><li><p>Si no existe ninguna solución para una combinación determinada, escribe una X en la casilla correspondiente.</p></li></ul><p>Cómo rellenar la tabla:</p><p>Las filas indican el orden de simetría rotacional de la figura, desde 1 hasta 12.</p><p>Las columnas distinguen entre tres tipos de figura (triángulo, hexágono y dodecágono) y, para cada uno, indican si tiene simetría axial o no:</p><ul><li><p>No mirror: sin simetría axial.</p></li><li><p>Line sym.: con simetría axial.</p></li></ul><p>Por ejemplo, si construyes un hexágono con simetría rotacional de orden 3 y con algún eje de simetría, marca la casilla de la fila 3-fold y la columna Hexagon – Line sym.<br><br></p>Puesta en común<p>1. ¿Qué tipos de simetría son imposibles en cada uno de los polígonos? ¿Por qué?</p><p>2. ¿Qué relación existe entre el número de lados de un polígono regular y los posibles órdenes de simetría rotacional (n-fold) que se pueden conseguir al cubrirlo con bloques geométricos? Explica tu respuesta.</p><p>3. Describe algunas estrategias para crear nuevos diseños a partir de otros que ya hayas construido.</p><p>4. Elige una figura hecha con bloques geométricos que tenga un determinado tipo de simetría. Experimenta para conseguir que tenga más o menos simetría, cambiando unos bloques por otros o añadiendo y quitando bloques. Anota las estrategias que utilices en una hoja aparte.</p><p>5. ¿Qué tipos de simetría crees que serían posibles si intentaras cubrir una figura con la forma del bloque geométrico azul, pero con lados de 3 pulgadas (7,62 cm)? Explica tu predicción.</p>",
+    "sentido": [
+      "espacial"
+    ],
+    "proceso": [
+      "resolución de problemas"
+    ],
+    "curso": [
+      "3º ESO",
+      "4º ESO"
+    ],
+    "material": [
+      "pattern blocks"
+    ],
+    "imagen": "imagenes/dodecagono.jpg",
+    "enlace": "actividades/exploramos-simetrias-con-pattern-blocks.html",
+    "pdf": "actividades/pdfs/pattern-simetrias-hexagono-dodecagono-triangulo-compressed.pdf",
+    "contenido": "Cubre las figuras del pdf utilizando bloques geométricos (pattern blocks). Puedes utilizar tantos bloques como necesites y de cualquier tipo.\n\nCada vez que encuentres una solución, dibuja la figura resultante en la plantilla correspondiente e indica sus propiedades de simetría:\n\nSimetría rotacional: ¿la figura coincide consigo misma al girarla? Si es así, indica su orden de simetría (cuántas veces coincide consigo misma durante una vuelta completa).\n\nSimetría axial: ¿la figura tiene algún eje de simetría, es decir, una línea que la divide en dos mitades que son imágenes especulares?\n\nA medida que encuentres soluciones, marca las casillas correspondientes de la tabla.\n\nSi consigues formar una figura sin ningún tipo de simetría, marca la casilla de simetría rotacional de orden 1 (1-fold).\n\nSi no existe ninguna solución para una combinación determinada, escribe una X en la casilla correspondiente.\n\nCómo rellenar la tabla:\n\nLas filas indican el orden de simetría rotacional de la figura, desde 1 hasta 12.\n\nLas columnas distinguen entre tres tipos de figura (triángulo, hexágono y dodecágono) y, para cada uno, indican si tiene simetría axial o no:\n\nNo mirror: sin simetría axial.\n\nLine sym.: con simetría axial.\n\nPor ejemplo, si construyes un hexágono con simetría rotacional de orden 3 y con algún eje de simetría, marca la casilla de la fila 3-fold y la columna Hexagon – Line sym.\n\n\n\nPuesta en común\n\n1. ¿Qué tipos de simetría son imposibles en cada uno de los polígonos? ¿Por qué?\n\n2. ¿Qué relación existe entre el número de lados de un polígono regular y los posibles órdenes de simetría rotacional (n-fold) que se pueden conseguir al cubrirlo con bloques geométricos? Explica tu respuesta.\n\n3. Describe algunas estrategias para crear nuevos diseños a partir de otros que ya hayas construido.\n\n4. Elige una figura hecha con bloques geométricos que tenga un determinado tipo de simetría. Experimenta para conseguir que tenga más o menos simetría, cambiando unos bloques por otros o añadiendo y quitando bloques. Anota las estrategias que utilices en una hoja aparte.\n\n5. ¿Qué tipos de simetría crees que serían posibles si intentaras cubrir una figura con la forma del bloque geométrico azul, pero con lados de 3 pulgadas (7,62 cm)? Explica tu predicción.",
+    "referencia_web": "https://www.mathed.page/manipulatives/pattern-blocks/dodecagons/index.html"
+  },
+  {
+    "titulo": "Cuadriláteros en geoplano",
+    "descripcion": "Construimos cuadriláteros en un geoplano a partir de un lado.",
+    "contenido_html": "<p>Cada segmento representa uno de los lados del cuadrilátero que se indica. Completa la figura dibujando los otros tres lados. En cada caso, trata de construir el cuadrilátero que tenga la mayor área posible, indicada entre paréntesis.</p><p>La unidad de medida corresponde a la distancia entre dos puntos consecutivos, tanto en dirección horizontal como vertical.</p><p>Un asterisco (*) indica que existe algún cuadrilátero especial cuya área es mayor que la señalada. Por ejemplo, el paralelogramo de mayor área podría ser un cuadrado o un rectángulo.</p>",
+    "sentido": [
+      "espacial"
+    ],
+    "proceso": [
+      "razonamiento y prueba"
+    ],
+    "curso": [
+      "1º ESO",
+      "2º ESO"
+    ],
+    "material": [
+      "geoplano"
+    ],
+    "imagen": "imagenes/geoplano-cuadrilateros-red.jpg",
+    "enlace": "actividades/cuadrilateros-en-geoplano.html",
+    "pdf": "actividades/pdfs/geoplano-cuadrilateros.pdf",
+    "contenido": "Cada segmento representa uno de los lados del cuadrilátero que se indica. Completa la figura dibujando los otros tres lados. En cada caso, trata de construir el cuadrilátero que tenga la mayor área posible, indicada entre paréntesis.\n\nLa unidad de medida corresponde a la distancia entre dos puntos consecutivos, tanto en dirección horizontal como vertical.\n\nUn asterisco (*) indica que existe algún cuadrilátero especial cuya área es mayor que la señalada. Por ejemplo, el paralelogramo de mayor área podría ser un cuadrado o un rectángulo.",
+    "referencia_web": "https://nrich.maths.org/problems/completing-quadrilaterals"
+  },
+  {
+    "titulo": "Construimos casas de colores",
+    "descripcion": "Construimos casa de colores con policubos y descubrimos cuántas podemos crear siguiendo distintas reglas.",
+    "contenido_html": "Vamos a construir casitas de colores. Cada casita estará formada por varios pisos, colocados uno encima de otro. Para cada piso podemos elegir uno de varios colores.<p>Podemos repetir los colores en una misma casita.</p><p><strong>Dos colores y dos pisos</strong></p><p>Supongamos que tenemos piezas de color azul y verde.</p><p>¿Cuántas casitas diferentes podemos construir?</p><ol><li><p>Dibuja o construye todas las posibilidades.</p></li><li><p>Organízalas de manera que no repitas ninguna.</p></li><li><p>Explica cómo sabes que no te falta ninguna posibilidad.</p></li></ol><p><strong>Añadimos un piso</strong></p><p>Seguimos teniendo dos colores, pero ahora las casitas tienen tres pisos.</p><p>¿Cuántas casitas diferentes podemos construir?</p><p>Intenta aprovechar lo que descubriste en el apartado anterior. ¿Y si tuvieran cuatro o cinco pisos?</p><p><strong>Añadimos un color</strong></p><p>Ahora tenemos tres colores: azul, amarillo y verde.</p><p>Empieza construyendo casitas de dos pisos. Después, investiga qué ocurre cuando tienen tres o cuatro pisos.</p><p>Busca una forma de calcular el número de casitas sin tener que dibujarlas todas.</p><p><strong>El caso general</strong></p><p>Imagina que disponemos de n colores diferentes y queremos construir casitas de m pisos.</p><p>¿Cuántas casitas diferentes podremos construir?</p><p>Intenta encontrar una regla que permita calcularlo y explica tu razonamiento.</p><p><br></p><p><strong>Ampliación: ¿y si el orden de los pisos no importa?</strong></p><p>Hasta ahora hemos considerado diferentes, por ejemplo, estas dos casitas:</p><ul><li><p>Verde – azul – amarillo.</p></li><li><p>Verde – amarillo – azul.</p></li></ul><p>Pero vamos a cambiar las reglas: dos casitas serán iguales si tienen los mismos colores, aunque aparezcan en distinto orden.</p><p>Utilizando los colores azul, amarillo y verde, ¿cuántas casitas diferentes podemos construir si tienen tres pisos?</p><p>Puedes organizarlas según los colores que aparecen:</p><ul><li><p>Los tres pisos del mismo color.</p></li><li><p>Dos pisos de un color y uno de otro.</p></li><li><p>Los tres pisos de colores diferentes.</p></li></ul><p>Explica cómo sabes que has encontrado todas las posibilidades.</p><p><strong>Buscamos una regla general</strong></p><p>Investiga qué ocurre cuando tenemos n colores y queremos construir casitas de m pisos, pero el orden de los colores no importa.</p><p>¿Puedes encontrar una forma de calcular cuántas casitas diferentes hay sin necesidad de dibujarlas todas?</p><p>Pista: ahora no importa el orden en el que aparecen los colores, sino cuántas veces aparece cada uno.</p><p><br></p><p><a href=\"https://x.com/CarlesGranell4/status/2100140345451254130\" target=\"_blank\" rel=\"noopener noreferrer\">Actividad</a> encontrada en el twitter de Carles Granell.</p>",
+    "sentido": [
+      "estocástico"
+    ],
+    "proceso": [
+      "razonamiento y prueba"
+    ],
+    "curso": [
+      "1º ESO"
+    ],
+    "material": [
+      "policubos"
+    ],
+    "imagen": "imagenes/casitas.jpg",
+    "enlace": "actividades/construimos-casas-de-colores.html",
+    "pdf": "",
+    "contenido": "Vamos a construir casitas de colores. Cada casita estará formada por varios pisos, colocados uno encima de otro. Para cada piso podemos elegir uno de varios colores.\n\nPodemos repetir los colores en una misma casita.\n\nDos colores y dos pisos\n\nSupongamos que tenemos piezas de color azul y verde.\n\n¿Cuántas casitas diferentes podemos construir?\n\nDibuja o construye todas las posibilidades.\n\nOrganízalas de manera que no repitas ninguna.\n\nExplica cómo sabes que no te falta ninguna posibilidad.\n\nAñadimos un piso\n\nSeguimos teniendo dos colores, pero ahora las casitas tienen tres pisos.\n\n¿Cuántas casitas diferentes podemos construir?\n\nIntenta aprovechar lo que descubriste en el apartado anterior. ¿Y si tuvieran cuatro o cinco pisos?\n\nAñadimos un color\n\nAhora tenemos tres colores: azul, amarillo y verde.\n\nEmpieza construyendo casitas de dos pisos. Después, investiga qué ocurre cuando tienen tres o cuatro pisos.\n\nBusca una forma de calcular el número de casitas sin tener que dibujarlas todas.\n\nEl caso general\n\nImagina que disponemos de n colores diferentes y queremos construir casitas de m pisos.\n\n¿Cuántas casitas diferentes podremos construir?\n\nIntenta encontrar una regla que permita calcularlo y explica tu razonamiento.\n\n\n\n\nAmpliación: ¿y si el orden de los pisos no importa?\n\nHasta ahora hemos considerado diferentes, por ejemplo, estas dos casitas:\n\nVerde – azul – amarillo.\n\nVerde – amarillo – azul.\n\nPero vamos a cambiar las reglas: dos casitas serán iguales si tienen los mismos colores, aunque aparezcan en distinto orden.\n\nUtilizando los colores azul, amarillo y verde, ¿cuántas casitas diferentes podemos construir si tienen tres pisos?\n\nPuedes organizarlas según los colores que aparecen:\n\nLos tres pisos del mismo color.\n\nDos pisos de un color y uno de otro.\n\nLos tres pisos de colores diferentes.\n\nExplica cómo sabes que has encontrado todas las posibilidades.\n\nBuscamos una regla general\n\nInvestiga qué ocurre cuando tenemos n colores y queremos construir casitas de m pisos, pero el orden de los colores no importa.\n\n¿Puedes encontrar una forma de calcular cuántas casitas diferentes hay sin necesidad de dibujarlas todas?\n\nPista: ahora no importa el orden en el que aparecen los colores, sino cuántas veces aparece cada uno.\n\n\n\n\nActividad encontrada en el twitter de Carles Granell.",
+    "referencia_web": "https://octaedro.com/libro/estadistica-combinatoria-i-probabilitat/"
+  }
+]

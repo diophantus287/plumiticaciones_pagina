@@ -1,0 +1,38 @@
+services:
+  mates:
+    build: .
+    container_name: mates-web
+    restart: unless-stopped
+    networks:
+      - web
+    ports:
+      - "9091:8080"
+    volumes:
+      - ./actividades.json:/usr/share/nginx/html/actividades.json:ro
+      - ./imagenes:/usr/share/nginx/html/imagenes:ro
+      - ./actividades:/usr/share/nginx/html/actividades:ro
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mates.rule=Host(`plumiticaciones.warein.me`)"
+      - "traefik.http.routers.mates.entrypoints=web"
+      - "traefik.http.routers.mates.tls.certresolver=myresolver"
+      - "traefik.http.services.mates.loadbalancer.server.port=8080"
+
+  mates-admin:
+    build: ./admin
+    container_name: mates-admin
+    restart: unless-stopped
+    user: "${PUID:-1000}:${PGID:-1000}"
+    environment:
+      - ADMIN_USER=${ADMIN_USER:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:?define ADMIN_PASSWORD en .env}
+    volumes:
+      - ./actividades.json:/data/actividades.json
+      - ./imagenes:/data/imagenes
+      - ./actividades:/data/actividades
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
